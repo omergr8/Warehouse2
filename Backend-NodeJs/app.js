@@ -93,7 +93,7 @@ if (process.env.NODE_ENV === "production") {
 // app.use("*", (req, res, next) => {
 //   res.sendFile(path.join(__dirname, "build", "index.html"));
 // });
-// app.get("/*", (req, res) => {
+// app.get("/*",, (req, res) => {
 //   res.sendFile(path.join(__dirname, "build", "index.html"));
 // });
 app.get("*", (req, res) => {
