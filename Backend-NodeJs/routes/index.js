@@ -1,13 +1,13 @@
-var express = require('express');
-const request=require('request')
-const mongoose = require('mongoose');
+var express = require("express");
+const request = require("request");
+const mongoose = require("mongoose");
 ObjectID = mongoose.Types.ObjectId;
 var router = express.Router();
-const csv=require('csvtojson')
-const Product = require('../models/Product');
-const ProductCategory = require('../models/productCategory')
+const csv = require("csvtojson");
+const Product = require("../models/Product");
+const ProductCategory = require("../models/productCategory");
 /* GET home page. */
-router.get('/', async function(req, res, next) {
+router.get("/", async function (req, res, next) {
   // const categories = [ObjectID("5f1407832516012ba41b338d"),
   //                     ObjectID("5f14078f2516012ba41b338f"),
   //                   ObjectID("5f1407952516012ba41b3391"),
@@ -19,7 +19,7 @@ router.get('/', async function(req, res, next) {
   //   .fromStream(request.get('http://agile-refuge-37570.herokuapp.com/products/d91/csv'))
   //   .subscribe(async function(json){
   //     var data = JSON.parse(JSON.stringify(json));
-      
+
   //     let images = [data['images 1'], data['images 2'], data['images 3'], data['images 4'], data['images 5']];
   //     let images_final = [];
   //     for (i = 0; i<images.length; i++) {
@@ -43,10 +43,10 @@ router.get('/', async function(req, res, next) {
   //       response = await ProductCategory.save_product(data);
   //       console.log('aa');
   //     }
-      
+
   //   });
-    
-    res.status(200).send('aaaa');
+
+  res.status(200).send("aaaa");
 });
 
 module.exports = router;

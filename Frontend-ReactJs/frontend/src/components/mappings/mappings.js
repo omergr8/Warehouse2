@@ -73,7 +73,7 @@ class Mappings extends Component {
 
   OrignalWareHouseTreeData;
   response_nodes = [];
-  server_url = "http://127.0.0.1:3000";
+  server_url = "https://warehouse-22.herokuapp.com";
   UpdatedShopData;
   componentDidMount() {
     this.loadInitialShopData();
